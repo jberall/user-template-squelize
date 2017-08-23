@@ -1,0 +1,59 @@
+{
+  "name": "user-template-sequelize",
+  "version": "1.0.0",
+  "description": "Template for user functions (login, logout, register, lost password, etc.) with sequelize, postgresql and jwt.",
+  "main": "lib/index.js",
+  "keywords": [
+    "Hapi",
+    "Postgresql",
+    "Sequelize",
+    "JWT",
+    "Lout",
+    "Swagger",
+    "Good"
+  ],
+  "author": "Jonathan Berall <jberall@gmail.com>",
+  "license": "BSD-3-Clause",
+  "engines": {
+    "node": ">= 4.x.x",
+    "npm": ">= 3.x"
+  },
+  "dependencies": {
+    "async": "2.x.x",
+    "blipp": "^2.3.0",
+    "boom": "4.x.x",
+    "crumb": "6.x.x",
+    "glue": "4.x.x",
+    "good": "7.x.x",
+    "good-console": "6.x.x",
+    "good-file": "6.x.x",
+    "good-squeeze": "5.x.x",
+    "handlebars": "4.x.x",
+    "hapi": "16.x.x",
+    "hapi-auth-basic": "4.x.x",
+    "hapi-auth-cookie": "6.x.x",
+    "hapi-auth-jwt2": "^7.3.0",
+    "hapi-require-https": "^2.1.0",
+    "hapi-swagger": "^7.7.1",
+    "hoek": "4.x.x",
+    "inert": "4.x.x",
+    "items": "2.x.x",
+    "joi": "10.x.x",
+    "pg": "^7.2.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.6.0",
+    "swagger": "^0.7.5",
+    "vision": "4.x.x"
+  },
+  "scripts": {
+    "test-console": "lab -a code -t 100 -L -v",
+    "test-one": "lab test/version.js -a code -t 100 -L -v",
+    "test": "lab -a code -L -r html -o views/test-results.html -r console -o stdout",
+    "start": "node lib/start.js"
+  },
+  "devDependencies": {
+    "code": "4.x.x",
+    "lab": "11.x.x",
+    "lout": "9.x.x"
+  }
+}

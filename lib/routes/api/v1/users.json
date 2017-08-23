@@ -1,0 +1,16 @@
+{
+	"jberall": {
+        "id": 1,
+        "username": "jberall",
+        "password": "jberall",
+        "email": "jberall@gmail.com",
+        "scope": ["admin", "user"]
+	},
+	"sthorne": {
+        "id": 2,
+        "username": "sthorne",
+	"password": "sthorne",
+        "email": "sthorne@webresults.ca",
+        "scope": ["user"]
+	}
+}
