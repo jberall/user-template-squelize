@@ -1,2 +1,6 @@
 # ignore client side browser scripts
 assets/scripts/*.js
+trash
+test-trash
+javascript-tests
+info

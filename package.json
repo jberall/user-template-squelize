@@ -13,12 +13,17 @@
     "Good"
   ],
   "author": "Jonathan Berall <jberall@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jberall/user-template-squelize.git"
+  },  
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">= 4.x.x",
     "npm": ">= 3.x"
   },
   "dependencies": {
+    "@deloittesolutions/joi-owasp-extensions": "^1.0.0",
     "async": "2.x.x",
     "blipp": "^2.3.0",
     "boom": "4.x.x",
@@ -47,7 +52,7 @@
   },
   "scripts": {
     "test-console": "lab -a code -t 100 -L -v",
-    "test-one": "lab test/version.js -a code -t 100 -L -v",
+    "test-one": "lab test/schemas/user-schema.js -a code -t 100 -v",
     "test": "lab -a code -L -r html -o views/test-results.html -r console -o stdout",
     "start": "node lib/start.js"
   },

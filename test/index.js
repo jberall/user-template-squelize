@@ -154,7 +154,7 @@ describe('/index', () => {
                 server.stop(done);
             });
         });
-    });    
+    });
 });
 
 internals.manifest = {
