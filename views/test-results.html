@@ -553,14 +553,14 @@
         </li>
         <li>
             <span class="cov high">100</span>
-            <a href="#lib/routes/test-results.js"><span class="dirname">lib/routes/</span><span class="basename">test-results.js</span></a>
+            <a href="#lib/routes/static-files.js"><span class="dirname">lib/routes/</span><span class="basename">static-files.js</span></a>
         </li>
         <li>
             <span class="cov high">100</span>
             <a href="#lib/routes/version.js"><span class="dirname">lib/routes/</span><span class="basename">version.js</span></a>
         </li>
         <li>
-            <span class="cov high">97.80</span>
+            <span class="cov high">91.75</span>
             <a href="#lib/routes/api/v1/user-routes.js"><span class="dirname">lib/routes/api/v1/</span><span class="basename">user-routes.js</span></a>
         </li>
         <li>
@@ -572,14 +572,38 @@
             <a href="#lib/schema/user-schema.js"><span class="dirname">lib/schema/</span><span class="basename">user-schema.js</span></a>
         </li>
         <li><a href="#linting">Linting Report</a></li>
+        <li>
+            <span class="lint"><span class="high">0</span> || <span class="low">2</span></span>
+            <a href="#lint-lib\index.js">lib\index.js</a>
+        </li>
+        <li>
+            <span class="lint"><span class="low">5</span> || <span class="low">7</span></span>
+            <a href="#lint-lib\plugins\jwt-auth.js">lib\plugins\jwt-auth.js</a>
+        </li>
+        <li>
+            <span class="lint"><span class="low">1</span> || <span class="low">4</span></span>
+            <a href="#lint-lib\routes\api\v1\user-routes.js">lib\routes\api\v1\user-routes.js</a>
+        </li>
+        <li>
+            <span class="lint"><span class="high">0</span> || <span class="low">1</span></span>
+            <a href="#lint-lib\routes\static-files.js">lib\routes\static-files.js</a>
+        </li>
+        <li>
+            <span class="lint"><span class="high">0</span> || <span class="low">2</span></span>
+            <a href="#lint-test\index.js">test\index.js</a>
+        </li>
+        <li>
+            <span class="lint"><span class="high">0</span> || <span class="low">3</span></span>
+            <a href="#lint-test\routes\static-files.js">test\routes\static-files.js</a>
+        </li>
     </div>
     <div id="tests">
       <h1>Test Report</h1>
-      <div class="stats high">
-          <div class="failures">0</div>
+      <div class="stats terrible">
+          <div class="failures">1</div>
           <div class="skipped">0</div>
-          <div class="test-count">44</div>
-          <div class="duration">3625</div>
+          <div class="test-count">46</div>
+          <div class="duration">4338</div>
       </div>
       <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="success" id="show-success">
@@ -622,308 +646,336 @@
               <td class="test-title">/index starts server and returns hapi server object
                   
               </td>
-              <td class="test-duration">138</td>
+              <td class="test-duration">144</td>
           </tr>
           <tr class="show /index success">
               <td class="test-id">2</td>
               <td class="test-title">/index starts server on provided port
                   
               </td>
-              <td class="test-duration">46</td>
+              <td class="test-duration">97</td>
           </tr>
           <tr class="show /index success">
               <td class="test-id">3</td>
               <td class="test-title">/index handles register plugin errors
                   
               </td>
-              <td class="test-duration">76</td>
+              <td class="test-duration">40</td>
           </tr>
           <tr class="show /index success">
               <td class="test-id">4</td>
               <td class="test-title">/index forces re-routing to https
                   
               </td>
-              <td class="test-duration">144</td>
+              <td class="test-duration">87</td>
           </tr>
           <tr class="show /index success">
               <td class="test-id">5</td>
               <td class="test-title">/index redirects when non-existing route requested.
                   
               </td>
-              <td class="test-duration">85</td>
+              <td class="test-duration">75</td>
           </tr>
           <tr class="show /index success">
               <td class="test-id">6</td>
               <td class="test-title">/index contines when Boom error but not Boom(404) Not Found.
                   
               </td>
-              <td class="test-duration">53</td>
+              <td class="test-duration">55</td>
           </tr>
           <tr class="show /good success">
               <td class="test-id">7</td>
               <td class="test-title">/good errors on failed registering good registration plugin
                   
               </td>
-              <td class="test-duration">89</td>
+              <td class="test-duration">50</td>
           </tr>
           <tr class="show /good success">
               <td class="test-id">8</td>
               <td class="test-title">/good errors on failed registering of good plugin
                   
               </td>
-              <td class="test-duration">54</td>
+              <td class="test-duration">44</td>
           </tr>
           <tr class="show /good success">
               <td class="test-id">9</td>
               <td class="test-title">/good success registered good
                   
               </td>
-              <td class="test-duration">325</td>
+              <td class="test-duration">273</td>
           </tr>
           <tr class="show /good_integration success">
               <td class="test-id">10</td>
               <td class="test-title">/good integration options should be correctly passed through to good itself when registering our &#x60;good registration plugin&#x60;
                   
               </td>
-              <td class="test-duration">109</td>
+              <td class="test-duration">155</td>
           </tr>
           <tr class="show /good_integration success">
               <td class="test-id">11</td>
               <td class="test-title">/good integration tls options should be correctly passed to good itself when registering our &#x60;good registration plugin&#x60;
                   
               </td>
-              <td class="test-duration">88</td>
+              <td class="test-duration">105</td>
           </tr>
           <tr class="show /routes/api/v1/user-routes success">
               <td class="test-id">12</td>
               <td class="test-title">/routes/api/v1/user-routes returns a login page via https with error because nothing posted
                   
               </td>
-              <td class="test-duration">144</td>
+              <td class="test-duration">186</td>
           </tr>
           <tr class="show /test-results success">
               <td class="test-id">13</td>
               <td class="test-title">/test-results ensures /test-results always redirected to use https
                   
               </td>
-              <td class="test-duration">124</td>
+              <td class="test-duration">156</td>
           </tr>
           <tr class="show /test-results success">
               <td class="test-id">14</td>
               <td class="test-title">/test-results returns a test-results page via https
                   
               </td>
-              <td class="test-duration">167</td>
+              <td class="test-duration">276</td>
           </tr>
           <tr class="show /test-results success">
               <td class="test-id">15</td>
               <td class="test-title">/test-results errors on failed registering of vision
                   
               </td>
-              <td class="test-duration">38</td>
+              <td class="test-duration">113</td>
           </tr>
           <tr class="show /test-results success">
               <td class="test-id">16</td>
               <td class="test-title">/test-results errors on missing vision plugin
                   
               </td>
-              <td class="test-duration">180</td>
+              <td class="test-duration">24</td>
           </tr>
           <tr class="show /test-results success">
               <td class="test-id">17</td>
               <td class="test-title">/test-results errors on failed registering of inert
                   
               </td>
-              <td class="test-duration">29</td>
+              <td class="test-duration">33</td>
           </tr>
           <tr class="show /test-results success">
               <td class="test-id">18</td>
               <td class="test-title">/test-results errors on missing inert plugin
                   
               </td>
-              <td class="test-duration">50</td>
+              <td class="test-duration">52</td>
+          </tr>
+          <tr class="show /test-results success">
+              <td class="test-id">19</td>
+              <td class="test-title">/test-results returns a constant.json list
+                  
+              </td>
+              <td class="test-duration">47</td>
+          </tr>
+          <tr class="show /test-results failure">
+              <td class="test-id">20</td>
+              <td class="test-title">/test-results returns the /api/constants.json
+                  <div class="stack">Error: Expected { &#x27;jwt-type&#x27;: 
+       [ { &#x27;jwt-type-id&#x27;: &#x27;1&#x27;, description: &#x27;api&#x27; },
+         { &#x27;jwt-type-id&#x27;: &#x27;2&#x27;, description: &#x27;web ie. angular&#x27; },
+         { &#x27;jwt-type-id&#x27;: &#x27;3&#x27;, description: &#x27;password renewal&#x27; },
+         { &#x27;jwt-type-id&#x27;: &#x27;4&#x27;, description: &#x27;registation key&#x27; } ] } to equal specified value: { &#x27;jwt-type&#x27;: 
+       [ { &#x27;jwt-type-id&#x27;: &#x27;1&#x27;, description: &#x27;api&#x27; },
+         { &#x27;jwt-type-id&#x27;: &#x27;2&#x27;, description: &#x27;web ie. angular&#x27; },
+         { &#x27;jwt-type-id&#x27;: &#x27;3&#x27;, description: &#x27;password renewal&#x27; },
+         { &#x27;jwt-type-id&#x27;: &#x27;4&#x27;, description: &#x27;registation key!&#x27; } ] }
+        at internals.Assertion.internals.equal (C:\xampp\htdocs\angular4\hapi\hapi-university\user-template-sequelize\node_modules\code\lib\index.js:278:17)
+        at server.select.inject (C:\xampp\htdocs\angular4\hapi\hapi-university\user-template-sequelize\test\routes\static-files.js:175:51)
+        at Shot.inject (C:\xampp\htdocs\angular4\hapi\hapi-university\user-template-sequelize\node_modules\hapi\lib\connection.js:329:16)
+        at process.nextTick (C:\xampp\htdocs\angular4\hapi\hapi-university\user-template-sequelize\node_modules\shot\lib\response.js:27:36)
+        at _combinedTickCallback (internal/process/next_tick.js:131:7)
+        at process._tickDomainCallback (internal/process/next_tick.js:218:9)</div>
+              </td>
+              <td class="test-duration">201</td>
           </tr>
           <tr class="show /version success">
-              <td class="test-id">19</td>
+              <td class="test-id">21</td>
               <td class="test-title">/version ensures /version always redirected to use https
                   
               </td>
-              <td class="test-duration">53</td>
+              <td class="test-duration">45</td>
           </tr>
           <tr class="show /version success">
-              <td class="test-id">20</td>
+              <td class="test-id">22</td>
               <td class="test-title">/version returns the version from package.json
                   
               </td>
-              <td class="test-duration">86</td>
-          </tr>
-          <tr class="show joi-shortcut success">
-              <td class="test-id">21</td>
-              <td class="test-title">joi-shortcut validates joiStringTrim
-                  
-              </td>
-              <td class="test-duration">5</td>
-          </tr>
-          <tr class="show joi-shortcut success">
-              <td class="test-id">22</td>
-              <td class="test-title">joi-shortcut validates joiStringTrim null
-                  
-              </td>
-              <td class="test-duration">2</td>
+              <td class="test-duration">48</td>
           </tr>
           <tr class="show joi-shortcut success">
               <td class="test-id">23</td>
-              <td class="test-title">joi-shortcut validates joiStringTrimRequired null
+              <td class="test-title">joi-shortcut validates joiStringTrim
                   
               </td>
-              <td class="test-duration">2</td>
+              <td class="test-duration">19</td>
           </tr>
           <tr class="show joi-shortcut success">
               <td class="test-id">24</td>
-              <td class="test-title">joi-shortcut validates joiStringTrimRequired empty string
+              <td class="test-title">joi-shortcut validates joiStringTrim null
                   
               </td>
               <td class="test-duration">1</td>
           </tr>
-          <tr class="show /user-schema_usernameSchema success">
+          <tr class="show joi-shortcut success">
               <td class="test-id">25</td>
-              <td class="test-title">/user-schema usernameSchema validates usernameSchema username:&quot;jberall&quot; accepts
+              <td class="test-title">joi-shortcut validates joiStringTrimRequired null
                   
               </td>
-              <td class="test-duration">1</td>
+              <td class="test-duration">3</td>
           </tr>
-          <tr class="show /user-schema_usernameSchema success">
+          <tr class="show joi-shortcut success">
               <td class="test-id">26</td>
-              <td class="test-title">/user-schema usernameSchema validates usernameSchema with trim username:&quot;  jberall  &quot; accepts
+              <td class="test-title">joi-shortcut validates joiStringTrimRequired empty string
                   
               </td>
               <td class="test-duration">2</td>
           </tr>
           <tr class="show /user-schema_usernameSchema success">
               <td class="test-id">27</td>
-              <td class="test-title">/user-schema usernameSchema validates required usernameSchema username:null
+              <td class="test-title">/user-schema usernameSchema validates usernameSchema username:&quot;jberall&quot; accepts
                   
               </td>
-              <td class="test-duration">2</td>
+              <td class="test-duration">5</td>
           </tr>
           <tr class="show /user-schema_usernameSchema success">
               <td class="test-id">28</td>
-              <td class="test-title">/user-schema usernameSchema validates required usernameSchema username: empty string
+              <td class="test-title">/user-schema usernameSchema validates usernameSchema with trim username:&quot;  jberall  &quot; accepts
                   
               </td>
               <td class="test-duration">1</td>
           </tr>
           <tr class="show /user-schema_usernameSchema success">
               <td class="test-id">29</td>
-              <td class="test-title">/user-schema usernameSchema validates min(4) usernameSchema username
+              <td class="test-title">/user-schema usernameSchema validates required usernameSchema username:null
                   
               </td>
-              <td class="test-duration">5</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show /user-schema_usernameSchema success">
               <td class="test-id">30</td>
-              <td class="test-title">/user-schema usernameSchema validates max(20) usernameSchema username
+              <td class="test-title">/user-schema usernameSchema validates required usernameSchema username: empty string
                   
               </td>
-              <td class="test-duration">9</td>
+              <td class="test-duration">2</td>
           </tr>
-          <tr class="show /user-schema_passwordSchema success">
+          <tr class="show /user-schema_usernameSchema success">
               <td class="test-id">31</td>
-              <td class="test-title">/user-schema passwordSchema validates good passwordSchema password
+              <td class="test-title">/user-schema usernameSchema validates min(4) usernameSchema username
                   
               </td>
-              <td class="test-duration">7</td>
+              <td class="test-duration">3</td>
           </tr>
-          <tr class="show /user-schema_passwordSchema success">
+          <tr class="show /user-schema_usernameSchema success">
               <td class="test-id">32</td>
-              <td class="test-title">/user-schema passwordSchema validates passwordSchema with trim password:&quot;  Th@ra!1234  &quot; accepts
+              <td class="test-title">/user-schema usernameSchema validates max(20) usernameSchema username
                   
               </td>
               <td class="test-duration">2</td>
           </tr>
           <tr class="show /user-schema_passwordSchema success">
               <td class="test-id">33</td>
-              <td class="test-title">/user-schema passwordSchema fail at least 1 uppercase passwordSchema with trim password
+              <td class="test-title">/user-schema passwordSchema validates good passwordSchema password
                   
               </td>
               <td class="test-duration">2</td>
           </tr>
           <tr class="show /user-schema_passwordSchema success">
               <td class="test-id">34</td>
-              <td class="test-title">/user-schema passwordSchema fail at least 1 lowercase passwordSchema with trim password
+              <td class="test-title">/user-schema passwordSchema validates passwordSchema with trim password:&quot;  Th@ra!1234  &quot; accepts
                   
               </td>
-              <td class="test-duration">3</td>
+              <td class="test-duration">4</td>
           </tr>
           <tr class="show /user-schema_passwordSchema success">
               <td class="test-id">35</td>
-              <td class="test-title">/user-schema passwordSchema fail at least 1 digit passwordSchema with trim password
+              <td class="test-title">/user-schema passwordSchema fail at least 1 uppercase passwordSchema with trim password
                   
               </td>
               <td class="test-duration">2</td>
           </tr>
           <tr class="show /user-schema_passwordSchema success">
               <td class="test-id">36</td>
-              <td class="test-title">/user-schema passwordSchema fail special character passwordSchema with trim password
+              <td class="test-title">/user-schema passwordSchema fail at least 1 lowercase passwordSchema with trim password
                   
               </td>
-              <td class="test-duration">4</td>
+              <td class="test-duration">5</td>
           </tr>
           <tr class="show /user-schema_passwordSchema success">
               <td class="test-id">37</td>
-              <td class="test-title">/user-schema passwordSchema fail min(10) passwordSchema with trim password
+              <td class="test-title">/user-schema passwordSchema fail at least 1 digit passwordSchema with trim password
                   
               </td>
-              <td class="test-duration">17</td>
+              <td class="test-duration">2</td>
           </tr>
           <tr class="show /user-schema_passwordSchema success">
               <td class="test-id">38</td>
+              <td class="test-title">/user-schema passwordSchema fail special character passwordSchema with trim password
+                  
+              </td>
+              <td class="test-duration">30</td>
+          </tr>
+          <tr class="show /user-schema_passwordSchema success">
+              <td class="test-id">39</td>
+              <td class="test-title">/user-schema passwordSchema fail min(10) passwordSchema with trim password
+                  
+              </td>
+              <td class="test-duration">2</td>
+          </tr>
+          <tr class="show /user-schema_passwordSchema success">
+              <td class="test-id">40</td>
               <td class="test-title">/user-schema passwordSchema fail max(128) passwordSchema with trim password
                   
               </td>
-              <td class="test-duration">3</td>
+              <td class="test-duration">1</td>
           </tr>
           <tr class="show /user-schema_loginSchema success">
-              <td class="test-id">39</td>
+              <td class="test-id">41</td>
               <td class="test-title">/user-schema loginSchema passes good user and good password also test for stripUnknown
                   
               </td>
               <td class="test-duration">3</td>
           </tr>
           <tr class="show /user-schema_loginSchema success">
-              <td class="test-id">40</td>
+              <td class="test-id">42</td>
               <td class="test-title">/user-schema loginSchema fails bad user and good password
                   
               </td>
-              <td class="test-duration">12</td>
+              <td class="test-duration">2</td>
           </tr>
           <tr class="show /user-schema_loginSchema success">
-              <td class="test-id">41</td>
+              <td class="test-id">43</td>
               <td class="test-title">/user-schema loginSchema fails good user and bad password
                   
               </td>
               <td class="test-duration">2</td>
           </tr>
           <tr class="show /user-schema_loginSchema success">
-              <td class="test-id">42</td>
+              <td class="test-id">44</td>
               <td class="test-title">/user-schema loginSchema fails bad user and bad password
                   
               </td>
               <td class="test-duration">3</td>
           </tr>
           <tr class="show /version success">
-              <td class="test-id">43</td>
+              <td class="test-id">45</td>
               <td class="test-title">/version ensures /version always redirected to use https
                   
               </td>
-              <td class="test-duration">116</td>
+              <td class="test-duration">103</td>
           </tr>
           <tr class="show /version success">
-              <td class="test-id">44</td>
+              <td class="test-id">46</td>
               <td class="test-title">/version returns the version from package.json
                   
               </td>
-              <td class="test-duration">80</td>
+              <td class="test-duration">78</td>
           </tr>
           </tbody>
       </table>
@@ -931,10 +983,10 @@
     </div>    <div id="coverage">
         <h1>Code Coverage Report</h1>
         <div class="stats high">
-            <div class="percentage">99.20%</div>
-            <div class="sloc">249</div>
-            <div class="hits">247</div>
-            <div class="misses">2</div>
+            <div class="percentage">97.10%</div>
+            <div class="sloc">276</div>
+            <div class="hits">268</div>
+            <div class="misses">8</div>
         </div>
         <div id="files">
             <div class="file">
@@ -1148,8 +1200,8 @@
                 <h2 id="lib/index.js">lib/index.js</h2>
                 <div class="stats high">
                     <div class="percentage">100%</div>
-                    <div class="sloc">33</div>
-                    <div class="hits">33</div>
+                    <div class="sloc">41</div>
+                    <div class="hits">41</div>
                     <div class="misses">0</div>
                 </div>
                 <table>
@@ -1279,13 +1331,13 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>20</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>17</td>
+                            <td class="hits" data-tooltip>19</td>
                             <td class="source">        const web &#x3D; server.select(&#x27;web&#x27;);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>21</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>17</td>
+                            <td class="hits" data-tooltip>19</td>
                             <td class="source">        const webTls &#x3D; server.select(&#x27;web-tls&#x27;);</td>
                         </tr>
                         <tr class="hit">
@@ -1309,80 +1361,80 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>25</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>17</td>
+                            <td class="hits" data-tooltip>19</td>
                             <td class="source">        web.ext(&#x27;onRequest&#x27;, (request, reply) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>26</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            return reply.redirect(webTls.info.uri + request.url.path).permanent();</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>27</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            return reply.redirect(webTls.info.uri + request.url.path).permanent();</td>
+                            <td class="source">            // if (request.connection.info.protocol &#x3D;&#x3D;&#x3D; &#x27;http&#x27;) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>28</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        });</td>
+                            <td class="source">            //     console.log(&#x27;onRequest&#x27;,request.connection.info.protocol);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>29</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            //     console.log(&#x27;onRequest&#x27;,request.connection.info.protocol &#x3D;&#x3D;&#x3D; &#x27;http&#x27;);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>30</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>17</td>
-                            <td class="source">        webTls.ext(&#x27;onPreResponse&#x27;, (request, reply) &#x3D;&gt; {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            //     console.log(&#x27;onRequest&#x27;,webTls.info.uri + request.url.path);                </td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>31</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            //     return reply.redirect(webTls.info.uri + request.url.path).permanent();</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>32</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            if (request.response.isBoom) {</td>
+                            <td class="source">            // }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>33</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            // return reply.continue();</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>34</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                // Handle Bad Route Attempt</td>
+                            <td class="source">            // return reply.redirect(webTls.info.uri + request.url.path).permanent();</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>35</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">        });</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>36</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>2</td>
-                            <td class="source">                if (request.response.output.statusCode &#x3D;&#x3D;&#x3D; 404 &amp;&amp;</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>37</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    request.response.message &#x3D;&#x3D;&#x3D; &#x27;Not Found&#x27;) {</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>38</td>
@@ -1393,20 +1445,20 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>39</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">                    return reply(Boom.notFound(&#x27;Route: &#x27; + webTls.info.uri + request.url.path + &#x27; does not exist.&#x27;));</td>
+                            <td class="hits" data-tooltip>19</td>
+                            <td class="source">        webTls.ext(&#x27;onPreResponse&#x27;, (request, reply) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>40</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                }</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>41</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            }</td>
+                            <td class="source">            if (request.response.isBoom) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>42</td>
@@ -1417,26 +1469,26 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>43</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>5</td>
-                            <td class="source">            return reply.continue();</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">                // Handle Bad Route Attempt</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>44</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        });</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>45</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="hits" data-tooltip>2</td>
+                            <td class="source">                if (request.response.output.statusCode &#x3D;&#x3D;&#x3D; 404 &amp;&amp;</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>46</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        // Start the server</td>
+                            <td class="source">                    request.response.message &#x3D;&#x3D;&#x3D; &#x27;Not Found&#x27;) {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>47</td>
@@ -1447,41 +1499,95 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>48</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>17</td>
-                            <td class="source">        server.start((err) &#x3D;&gt; {</td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">                    return reply(Boom.notFound(&#x27;Route: &#x27; + webTls.info.uri + request.url.path + &#x27; does not exist.&#x27;));</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>49</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">                }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>50</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            return next(err, server);</td>
+                            <td class="source">            }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>51</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        });</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>52</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    });</td>
+                            <td class="hits" data-tooltip>6</td>
+                            <td class="source">            return reply.continue();</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>53</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">};</td>
+                            <td class="source">        });</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>54</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>55</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        // Start the server</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>56</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>57</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>19</td>
+                            <td class="source">        server.start((err) &#x3D;&gt; {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>58</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>59</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            return next(err, server);</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>60</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        });</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>61</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    });</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>62</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">};</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>63</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
@@ -1679,11 +1785,11 @@
                 </table>
             </div>
             <div class="file">
-                <h2 id="lib/routes/test-results.js">lib/routes/test-results.js</h2>
+                <h2 id="lib/routes/static-files.js">lib/routes/static-files.js</h2>
                 <div class="stats high">
                     <div class="percentage">100%</div>
-                    <div class="sloc">44</div>
-                    <div class="hits">44</div>
+                    <div class="sloc">56</div>
+                    <div class="hits">56</div>
                     <div class="misses">0</div>
                 </div>
                 <table>
@@ -1795,7 +1901,7 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>17</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>4</td>
+                            <td class="hits" data-tooltip>6</td>
                             <td class="source">    return next();</td>
                         </tr>
                         <tr class="hit">
@@ -1904,13 +2010,13 @@
                             <td class="line" data-tooltip>35</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">    </td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>36</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>2</td>
-                            <td class="source">    server.route({</td>
+                            <td class="hits" data-tooltip>4</td>
+                            <td class="source">    server.route([{</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>37</td>
@@ -2000,52 +2106,118 @@
                             <td class="line" data-tooltip>51</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    });</td>
+                            <td class="source">    },{</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>52</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">        method: &#x27;GET&#x27;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>53</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>2</td>
-                            <td class="source">    return next();</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        path: &#x27;/api/constants.json&#x27;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>54</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">};</td>
+                            <td class="source">        config: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>55</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            auth: false,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>56</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">exports.register.attributes &#x3D; {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            description: &#x27;Returns a Json file of all the system constants&#x27;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>57</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    name: &#x27;Test Results&#x27;</td>
+                            <td class="source">            tags: [&#x27;api&#x27;],</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>58</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">};</td>
+                            <td class="source">            handler: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>59</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">                file: __dirname + &#x27;/constants.json&#x27;</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>60</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            }</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>61</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        }</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>62</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    }]);</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>63</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>64</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>4</td>
+                            <td class="source">    return next();</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>65</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">};</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>66</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>67</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">exports.register.attributes &#x3D; {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>68</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    name: &#x27;Test Results&#x27;</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>69</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">};</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>70</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
@@ -2057,8 +2229,8 @@
                 <h2 id="lib/routes/version.js">lib/routes/version.js</h2>
                 <div class="stats high">
                     <div class="percentage">100%</div>
-                    <div class="sloc">24</div>
-                    <div class="hits">24</div>
+                    <div class="sloc">25</div>
+                    <div class="hits">25</div>
                     <div class="misses">0</div>
                 </div>
                 <table>
@@ -2171,7 +2343,7 @@
                             <td class="line" data-tooltip>17</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            // auth: false,</td>
+                            <td class="source">            auth: false,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>18</td>
@@ -2183,82 +2355,88 @@
                             <td class="line" data-tooltip>19</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            handler: (request, reply) &#x3D;&gt; {</td>
+                            <td class="source">            tags: [&#x27;api&#x27;],</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>20</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            handler: (request, reply) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>21</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                return reply(internals.response);</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>22</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            }</td>
+                            <td class="source">                return reply(internals.response);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>23</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        }</td>
+                            <td class="source">            }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>24</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    });</td>
+                            <td class="source">        }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>25</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">    });</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>26</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>27</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>8</td>
                             <td class="source">    return next();</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>27</td>
+                            <td class="line" data-tooltip>28</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">};</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>28</td>
+                            <td class="line" data-tooltip>29</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>29</td>
+                            <td class="line" data-tooltip>30</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">exports.register.attributes &#x3D; {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>30</td>
+                            <td class="line" data-tooltip>31</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    name: &#x27;package version&#x27;</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>31</td>
+                            <td class="line" data-tooltip>32</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">};</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>32</td>
+                            <td class="line" data-tooltip>33</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
@@ -2269,10 +2447,10 @@
             <div class="file">
                 <h2 id="lib/routes/api/v1/user-routes.js">lib/routes/api/v1/user-routes.js</h2>
                 <div class="stats high">
-                    <div class="percentage">97.80%</div>
-                    <div class="sloc">91</div>
+                    <div class="percentage">91.75%</div>
+                    <div class="sloc">97</div>
                     <div class="hits">89</div>
-                    <div class="misses">2</div>
+                    <div class="misses">8</div>
                 </div>
                 <table>
                     <thead>
@@ -2300,163 +2478,163 @@
                             <td class="line" data-tooltip>3</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
-                            <td class="source">const UserSchema &#x3D; require(&#x27;../../../schema/user-schema&#x27;);</td>
+                            <td class="source">const Joi &#x3D; require(&#x27;joi&#x27;);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>4</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">const UserSchema &#x3D; require(&#x27;../../../schema/user-schema&#x27;);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>5</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">// Declare internals</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>6</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">// Declare internals</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>7</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>8</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">const internals &#x3D; {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>8</td>
+                            <td class="line" data-tooltip>9</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    prefix: &#x27;/api/v1&#x27;,</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>9</td>
+                            <td class="line" data-tooltip>10</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    tags: [&#x27;api&#x27;, &#x27;v1&#x27;, &#x27;user&#x27;]</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>10</td>
+                            <td class="line" data-tooltip>11</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">};</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>11</td>
+                            <td class="line" data-tooltip>12</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>12</td>
+                            <td class="line" data-tooltip>13</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">exports.register &#x3D; (server, options, next) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>13</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
                             <td class="line" data-tooltip>14</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    // Code inside the callback function of server.dependency will only be executed</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>15</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    // after Auth plugin has been registered. It&#x27;s triggered by server.start,</td>
+                            <td class="source">    // Code inside the callback function of server.dependency will only be executed</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>16</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    // and runs before actual starting of the server.  It&#x27;s done because the call to</td>
+                            <td class="source">    // after Auth plugin has been registered. It&#x27;s triggered by server.start,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>17</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    // server.route upon registration with auth: basic config would fail and make</td>
+                            <td class="source">    // and runs before actual starting of the server.  It&#x27;s done because the call to</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>18</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    // the server crash if the basic strategy is not previously registered by Auth.</td>
+                            <td class="source">    // server.route upon registration with auth: basic config would fail and make</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>19</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">    // the server crash if the basic strategy is not previously registered by Auth.</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>20</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    server.dependency([], internals.after);</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>21</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">    server.dependency([], internals.after);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>22</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>23</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">    return next();</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>23</td>
+                            <td class="line" data-tooltip>24</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">};</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>24</td>
+                            <td class="line" data-tooltip>25</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>25</td>
+                            <td class="line" data-tooltip>26</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">exports.register.attributes &#x3D; {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>26</td>
+                            <td class="line" data-tooltip>27</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    name: &#x27;ApiUser&#x27;,</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>27</td>
+                            <td class="line" data-tooltip>28</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    version: &#x27;1.0.0&#x27;</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>28</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">};</td>
-                        </tr>
-                        <tr class="hit">
                             <td class="line" data-tooltip>29</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">};</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>30</td>
@@ -2467,488 +2645,488 @@
                         <tr class="hit">
                             <td class="line" data-tooltip>31</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip>1</td>
-                            <td class="source">internals.after &#x3D; (server, next) &#x3D;&gt; {</td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>32</td>
                             <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">internals.after &#x3D; (server, next) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>33</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    server.route({</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>34</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        method: &#x27;POST&#x27;,</td>
+                            <td class="source">    server.route({</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>35</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        path: internals.prefix + &#x27;/login&#x27;,</td>
+                            <td class="source">        method: &#x27;POST&#x27;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>36</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">        config: {</td>
+                            <td class="source">        path: internals.prefix + &#x27;/login&#x27;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>37</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            tags: internals.tags,</td>
+                            <td class="source">        config: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>38</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            description: &#x27;Authenticates user credentials.&#x27;,</td>
+                            <td class="source">            tags: internals.tags,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>39</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            notes: &#x60;Checks payload for valid [username or email] and password.&lt;br&gt;</td>
+                            <td class="source">            description: &#x27;Authenticates user credentials.&#x27;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>40</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    Not Valid: returns validation errors.&lt;br&gt;</td>
+                            <td class="source">            notes: &#x60;Checks payload for valid [username or email] and password.&lt;br&gt;</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>41</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    Valid: goes to database and retrieve user information&lt;br&gt;</td>
+                            <td class="source">                    Not Valid: returns validation errors.&lt;br&gt;</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>42</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    If no user retrieved returns error&lt;br&gt;</td>
+                            <td class="source">                    Valid: goes to database and retrieve user information&lt;br&gt;</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>43</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    If user retrieved compares password.&lt;br&gt;</td>
+                            <td class="source">                    If no user retrieved returns error&lt;br&gt;</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>44</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    If no match returns error&lt;br&gt;</td>
+                            <td class="source">                    If user retrieved compares password.&lt;br&gt;</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>45</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    If password matches generates JWT and JWT record in database table jwt_session returns user without password</td>
+                            <td class="source">                    If no match returns error&lt;br&gt;</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>46</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                    &#x60;,</td>
+                            <td class="source">                    If password matches generates JWT and JWT record in database table jwt_session returns user without password</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>47</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            auth: false,</td>
+                            <td class="source">                    &#x60;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>48</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            // plugins: { &#x27;hapi-auth-cookie&#x27;: { redirectTo: false } },</td>
+                            <td class="source">            auth: false,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>49</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            // plugins: { &#x27;hapi-auth-cookie&#x27;: { redirectTo: false } },</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>50</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            validate: {</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>51</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                payload: UserSchema.loginSchema</td>
+                            <td class="source">            validate: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>52</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            },</td>
+                            <td class="source">                payload: UserSchema.loginSchema</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>53</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">            handler: (request, reply) &#x3D;&gt; {</td>
+                            <td class="source">            },</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>54</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
+                            <td class="source">            handler: (request, reply) &#x3D;&gt; {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>55</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                             <tr class="chunks">
-                                <td class="line" data-tooltip>55</td>
+                                <td class="line" data-tooltip>56</td>
                                 <td class="lint empty"></td>
                                 <td class="hits" data-tooltip></td>
                                 <td class="source"><div>                </div><div class="miss never" data-tooltip>return reply(request.payload);</div></td>
                             </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>56</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                // internals.getUser(request.payload, (err, user) &#x3D;&gt; {</td>
-                        </tr>
-                        <tr class="hit">
                             <td class="line" data-tooltip>57</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>58</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                //     if (err) {</td>
+                            <td class="source">        }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>59</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                //         return reply(Boom.unauthorized(err)); // &quot;oh, no!&quot;</td>
+                            <td class="source">    });</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>60</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">                //     }</td>
+                            <td class="source"></td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>61</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>62</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     const userAccount &#x3D; Hoek.clone(user);</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>63</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     const sid &#x3D; String(userAccount.id);</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>64</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     delete userAccount.password;</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>65</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     return reply(userAccount);</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>66</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     // request.server.app.cache.set(sid, { account: userAccount }, 0, (err) &#x3D;&gt; {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>67</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>68</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     //     if (err) {</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>69</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     //         return reply(Boom.unauthorized(err));</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>70</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     //     }</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>71</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>72</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     //     request.cookieAuth.set({ sid });</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>73</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     //     return reply(userAccount);</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>74</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                //     // });</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>75</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">                // });</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>76</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">            }</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>77</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">        }</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>78</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    });</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>79</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>80</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip>1</td>
                             <td class="source">    server.route({</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>81</td>
+                            <td class="line" data-tooltip>62</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">        method: &#x27;POST&#x27;,</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>82</td>
+                            <td class="line" data-tooltip>63</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">        path: internals.prefix + &#x27;/logout&#x27;,</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>83</td>
+                            <td class="line" data-tooltip>64</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">        config: {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>84</td>
+                            <td class="line" data-tooltip>65</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">            // auth: { strategy: &#x27;session&#x27;, mode: &#x27;try&#x27; },</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>85</td>
+                            <td class="line" data-tooltip>66</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">            // plugins: { &#x27;hapi-auth-cookie&#x27;: { redirectTo: true } },</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>86</td>
+                            <td class="line" data-tooltip>67</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">            tags: internals.tags,</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>87</td>
+                            <td class="line" data-tooltip>68</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">            description: &#x27;Destroys authenticated users session.&#x27;,</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>88</td>
+                            <td class="line" data-tooltip>69</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">            handler: (request, reply) &#x3D;&gt; {</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>89</td>
+                            <td class="line" data-tooltip>70</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>90</td>
+                            <td class="line" data-tooltip>71</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">                // request.cookieAuth.clear();</td>
                         </tr>
                             <tr class="chunks">
-                                <td class="line" data-tooltip>91</td>
+                                <td class="line" data-tooltip>72</td>
                                 <td class="lint empty"></td>
                                 <td class="hits" data-tooltip></td>
                                 <td class="source"><div>                </div><div class="miss never" data-tooltip>return reply({ message: &#x27;Logged out&#x27; });</div></td>
                             </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>92</td>
+                            <td class="line" data-tooltip>73</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">            }</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>93</td>
+                            <td class="line" data-tooltip>74</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">        }</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>94</td>
+                            <td class="line" data-tooltip>75</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source">    });</td>
                         </tr>
                         <tr class="hit">
-                            <td class="line" data-tooltip>95</td>
+                            <td class="line" data-tooltip>76</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
                             <td class="source"></td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>77</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip>1</td>
+                            <td class="source">    server.route([{</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>78</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        method: &#x27;GET&#x27;,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>79</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        path: &#x27;/api/v1/jwt-token&#x27;,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>80</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        config: {</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>81</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            // auth: { strategy: &#x27;session&#x27;, mode: &#x27;try&#x27; },</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>82</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            // plugins: { &#x27;hapi-auth-cookie&#x27;: { redirectTo: true } },</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>83</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            tags: internals.tags,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>84</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            description: &#x27;Returns a jsonwebtoken.&#x27;,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>85</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            auth: false,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>86</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            handler: (request, reply) &#x3D;&gt; {</td>
+                        </tr>
+                            <tr class="chunks">
+                                <td class="line" data-tooltip>87</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source"><div>                </div><div class="miss never" data-tooltip>const jwt &#x3D; require(&#x27;jsonwebtoken&#x27;);</div></td>
+                            </tr>
+                            <tr class="miss">
+                                <td class="line" data-tooltip>88</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source" data-tooltip>                const token &#x3D; jwt.sign({ user: &#x27;jberall&#x27; },&#x27;secret&#x27;, { algorithm: &#x27;HS256&#x27;, expiresIn: &quot;1m&quot; });</td>
+                            </tr>
+                            <tr class="miss">
+                                <td class="line" data-tooltip>89</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source" data-tooltip>                return reply(token);</td>
+                            </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>90</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">            }</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>91</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        }        </td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>92</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">    },{</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>93</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        method: &#x27;GET&#x27;,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>94</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        path: &#x27;/api/v1/decode-jwt-token&#x27;,</td>
+                        </tr>
+                        <tr class="hit">
+                            <td class="line" data-tooltip>95</td>
+                            <td class="lint empty"></td>
+                            <td class="hits" data-tooltip></td>
+                            <td class="source">        config: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>96</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    // server.route({</td>
+                            <td class="source">            // auth: { strategy: &#x27;session&#x27;, mode: &#x27;try&#x27; },</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>97</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //     method: &#x27;GET&#x27;,</td>
+                            <td class="source">            // plugins: { &#x27;hapi-auth-cookie&#x27;: { redirectTo: true } },</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>98</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //     path: internals.prefix + &#x27;/generate&#x27;,</td>
+                            <td class="source">            validate: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>99</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //     config: {</td>
+                            <td class="source">                query: {</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>100</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //         auth: false,</td>
+                            <td class="source">                    token: Joi.string().required()</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>101</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //         description: &#x27;Get crumb to start session.&#x27;,</td>
+                            <td class="source">                }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>102</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //         handler: (request, reply) &#x3D;&gt; {</td>
+                            <td class="source">            },</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>103</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
+                            <td class="source">            tags: internals.tags,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>104</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //             // Read docs about automatically setting crumb to viewContext.</td>
+                            <td class="source">            description: &#x27;Returns a decoded jsonwebtoken.&#x27;,</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>105</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //             // This allows crumbs to be placed into views.</td>
+                            <td class="source">            handler: (request, reply) &#x3D;&gt; {</td>
                         </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>106</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    //             // generate route built for CORS receive a authentic crumb.</td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>107</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source"></td>
-                        </tr>
-                        <tr class="hit">
-                            <td class="line" data-tooltip>108</td>
-                            <td class="lint empty"></td>
-                            <td class="hits" data-tooltip></td>
-                            <td class="source">    //             return reply({ crumb: request.plugins.crumb });</td>
-                        </tr>
+                            <tr class="chunks">
+                                <td class="line" data-tooltip>106</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source"><div>                </div><div class="miss never" data-tooltip>const jwt &#x3D; require(&#x27;jsonwebtoken&#x27;);</div></td>
+                            </tr>
+                            <tr class="miss">
+                                <td class="line" data-tooltip>107</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source" data-tooltip>                const decoded &#x3D; jwt.decode(request.query.token);</td>
+                            </tr>
+                            <tr class="miss">
+                                <td class="line" data-tooltip>108</td>
+                                <td class="lint empty"></td>
+                                <td class="hits" data-tooltip></td>
+                                <td class="source" data-tooltip>                return reply(decoded);</td>
+                            </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>109</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //         }</td>
+                            <td class="source">            }</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>110</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    //     }</td>
+                            <td class="source">        }        </td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>111</td>
                             <td class="lint empty"></td>
                             <td class="hits" data-tooltip></td>
-                            <td class="source">    // });</td>
+                            <td class="source">    }]);</td>
                         </tr>
                         <tr class="hit">
                             <td class="line" data-tooltip>112</td>
@@ -3233,10 +3411,75 @@
     </div>    <div id="linting">
         <h1>Linting Report</h1>
             <div class="lint-stats">
-                <span class="lint-errors high">0</span>
-                <span class="lint-warnings high">0</span>
+                <span class="lint-errors low">6</span>
+                <span class="lint-warnings low">19</span>
             </div>
             <div class="lint-files">
-            </div>
+                <div class="lint-file">
+                </div>            <div class="lint-file">
+                    <h2 id="lint-lib\index.js">lib\index.js</h2>
+                    <ul>
+                        <li class="lint-entry">L25 - <span class="level-WARNING">WARNING</span> - hapi&#x2f;hapi-scope-start - Missing blank line at beginning of function.</li>
+                        <li class="lint-entry">L30 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                    <h2 id="lint-lib\plugins\jwt-auth.js">lib\plugins\jwt-auth.js</h2>
+                    <ul>
+                        <li class="lint-entry">L28 - <span class="level-WARNING">WARNING</span> - hapi&#x2f;hapi-scope-start - Missing blank line at beginning of function.</li>
+                        <li class="lint-entry">L29 - <span class="level-ERROR">ERROR</span> - indent - Expected indentation of 4 spaces but found 8.</li>
+                        <li class="lint-entry">L30 - <span class="level-ERROR">ERROR</span> - indent - Expected indentation of 4 spaces but found 8.</li>
+                        <li class="lint-entry">L31 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                        <li class="lint-entry">L38 - <span class="level-ERROR">ERROR</span> - indent - Expected indentation of 0 spaces but found 3.</li>
+                        <li class="lint-entry">L44 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                        <li class="lint-entry">L45 - <span class="level-ERROR">ERROR</span> - indent - Expected indentation of 12 spaces but found 8.</li>
+                        <li class="lint-entry">L45 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                        <li class="lint-entry">L46 - <span class="level-ERROR">ERROR</span> - indent - Expected indentation of 12 spaces but found 8.</li>
+                        <li class="lint-entry">L46 - <span class="level-WARNING">WARNING</span> - array-bracket-spacing - There should be no space after &#x27;&#x5b;&#x27;.</li>
+                        <li class="lint-entry">L46 - <span class="level-WARNING">WARNING</span> - array-bracket-spacing - There should be no space before &#x27;&#x5d;&#x27;.</li>
+                        <li class="lint-entry">L46 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                    <h2 id="lint-lib\routes\api\v1\user-routes.js">lib\routes\api\v1\user-routes.js</h2>
+                    <ul>
+                        <li class="lint-entry">L86 - <span class="level-WARNING">WARNING</span> - hapi&#x2f;hapi-scope-start - Missing blank line at beginning of function.</li>
+                        <li class="lint-entry">L88 - <span class="level-ERROR">ERROR</span> - quotes - Strings must use singlequote.</li>
+                        <li class="lint-entry">L91 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                        <li class="lint-entry">L105 - <span class="level-WARNING">WARNING</span> - hapi&#x2f;hapi-scope-start - Missing blank line at beginning of function.</li>
+                        <li class="lint-entry">L110 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                    <h2 id="lint-lib\routes\static-files.js">lib\routes\static-files.js</h2>
+                    <ul>
+                        <li class="lint-entry">L35 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                    <h2 id="lint-test\index.js">test\index.js</h2>
+                    <ul>
+                        <li class="lint-entry">L31 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                        <li class="lint-entry">L36 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                    <h2 id="lint-test\routes\static-files.js">test\routes\static-files.js</h2>
+                    <ul>
+                        <li class="lint-entry">L15 - <span class="level-WARNING">WARNING</span> - no-unused-vars - &#x27;ConstantsTestJson&#x27; is assigned a value but never used.</li>
+                        <li class="lint-entry">L145 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                        <li class="lint-entry">L175 - <span class="level-WARNING">WARNING</span> - no-trailing-spaces - Trailing spaces not allowed.</li>
+                    </ul>
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>            <div class="lint-file">
+                </div>        </div>
     </div>  </body>
 </html>

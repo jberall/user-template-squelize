@@ -25,6 +25,16 @@ const it = lab.test;
 
 describe('/index', () => {
 
+    // it('loop thrus routes', (done) => {
+    //     University.init(internals.manifest, internals.composeOptions, (err, server) => {
+    //         const routingTable = server.table();
+          
+    //         console.log('lentgh',routingTable[1].table[0].public.path);
+
+    //         server.stop(done);
+    //     });
+    // });    
+
     it('starts server and returns hapi server object', (done) => {
 
         University.init(internals.manifest, internals.composeOptions, (err, server) => {

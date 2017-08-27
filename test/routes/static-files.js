@@ -8,9 +8,10 @@ const Vision = require('vision');
 const Inert = require('inert');
 const Hoek = require('hoek');
 const Path = require('path');
+const Fs = require('fs');
 const University = require('../../lib');
 const Config = require('../../lib/config');
-const TestResults = require('../../lib/routes/test-results');
+const StaticFiles = require('../../lib/routes/static-files');
 
 // Declare internals
 
@@ -96,7 +97,7 @@ describe('/test-results', () => {
         University.init(manifest, internals.composeOptions, (err, server) => {
 
             expect(err).to.exist();
-            expect(err.message).to.equal('Plugin ' + TestResults.register.attributes.name + ' missing dependency ' + Vision.register.attributes.pkg.name +
+            expect(err.message).to.equal('Plugin ' + StaticFiles.register.attributes.name + ' missing dependency ' + Vision.register.attributes.pkg.name +
                                             ' in connection: ' + server.select('web-tls').info.uri);
 
             done();
@@ -134,12 +135,49 @@ describe('/test-results', () => {
         University.init(manifest, internals.composeOptions, (err, server) => {
 
             expect(err).to.exist();
-            expect(err.message).to.equal('Plugin ' + TestResults.register.attributes.name + ' missing dependency ' + Inert.register.attributes.pkg.name +
+            expect(err.message).to.equal('Plugin ' + StaticFiles.register.attributes.name + ' missing dependency ' + Inert.register.attributes.pkg.name +
                                             ' in connection: ' + server.select('web-tls').info.uri);
 
             done();
         });
     });
+    
+    it('returns a constant.json list', (done) => {
+
+        University.init(internals.manifest, internals.composeOptions, (err, server) => {
+
+            expect(err).to.not.exist();
+
+            const web = server.select('web');
+            const webTls = server.select('web-tls');
+
+            web.inject('/api/constant.json', (res) => {
+
+                expect(res.statusCode).to.equal(301);
+                expect(res.headers.location).to.equal(webTls.info.uri + '/api/constant.json');
+
+                server.stop(done);
+            });
+        });
+    });
+
+    it('returns the /api/constants.json', (done) => {
+
+        University.init(internals.manifest, internals.composeOptions, (err, server) => {
+
+            expect(err).to.not.exist();
+
+            server.select('web-tls').inject('/api/constants.json', (res) => {
+
+                expect(res.statusCode).to.equal(200);
+                const constantsTest = JSON.parse(Fs.readFileSync(__dirname + '/constants-test.json', 'utf8'));
+                expect(JSON.parse(res.result)).to.equal(constantsTest);              
+
+                server.stop(done);
+            });
+        });
+    });
+
 });
 
 internals.manifest = {
@@ -164,7 +202,7 @@ internals.manifest = {
             plugin: 'inert'
         },
         {
-            plugin: './routes/test-results',
+            plugin: './routes/static-files',
             options: {
                 select: ['web-tls']
             }

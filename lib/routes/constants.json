@@ -1,0 +1,8 @@
+{
+    "jwt-type": [
+         { "jwt-type-id": "1", "description": "api" },
+         { "jwt-type-id": "2", "description": "web ie. angular" },
+         { "jwt-type-id": "3", "description": "password renewal" },
+         { "jwt-type-id": "4", "description": "registation key" }
+    ]
+}
